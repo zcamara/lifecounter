@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Player"
-            android:id="@+id/button2"
+            android:id="@+id/addPlayer"
             android:layout_column="1"
             android:layout_marginTop="3dp" />
 
@@ -50,7 +50,6 @@
         android:layout_height="fill_parent"
         android:minHeight="5dp"
         android:background="#ffff0900">
-
     </TableRow>
 
     <TableRow
@@ -58,13 +57,12 @@
         android:layout_height="fill_parent"
         android:orientation="horizontal"
         android:showDividers="beginning">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Player-1"
-            android:id="@+id/textView3"
+            android:text="Player 1"
+            android:id="@+id/playerName1"
             android:layout_column="0"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="3dip" />
@@ -78,31 +76,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" + "
-            android:id="@+id/button3"
+            android:onClick="onBtnClicked"
+            android:id="@+id/p1gain1"
             android:layout_marginTop="3dp" />
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" - "
-            android:id="@+id/button4"
-            android:layout_toRightOf="@id/button3"
+            android:onClick="onBtnClicked"
+            android:id="@+id/p1lose1"
+            android:layout_toRightOf="@id/p1gain1"
             android:layout_marginTop="3dp"/>
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+5"
-            android:id="@+id/button5"
-            android:layout_toRightOf="@id/button4"
+            android:onClick="onBtnClicked"
+            android:id="@+id/p1gain5"
+            android:layout_toRightOf="@id/p1lose1"
             android:layout_marginTop="3dp"/>
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-5 "
-            android:id="@+id/button6"
-            android:layout_toRightOf="@id/button5"
+            android:onClick="onBtnClicked"
+            android:id="@+id/p1lose5"
+            android:layout_toRightOf="@id/p1gain5"
             android:layout_marginTop="3dp"/>
         </RelativeLayout>
         <TextView
@@ -110,11 +112,219 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="20"
-            android:id="@+id/textView4"
+            android:id="@+id/p1life"
             android:layout_column="2"
             android:layout_gravity="center_vertical|right"
             android:paddingRight="3dip" />
     </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:showDividers="beginning">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 2"
+            android:id="@+id/playerName2"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:gravity="center">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p2gain1"
+                android:layout_marginTop="3dp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p2lose1"
+                android:layout_toRightOf="@id/p2gain1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:onClick="onBtnClicked"
+                android:id="@+id/p2gain5"
+                android:layout_toRightOf="@id/p2lose1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5 "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p2lose5"
+                android:layout_toRightOf="@id/p2gain5"
+                android:layout_marginTop="3dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:id="@+id/p2life"
+            android:layout_column="2"
+            android:layout_gravity="center_vertical|right"
+            android:paddingRight="3dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:showDividers="beginning">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 3"
+            android:id="@+id/playerName3"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:gravity="center">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p3gain1"
+                android:layout_marginTop="3dp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p3lose1"
+                android:layout_toRightOf="@id/p3gain1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:onClick="onBtnClicked"
+                android:id="@+id/p3gain5"
+                android:layout_toRightOf="@id/p3lose1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5 "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p3lose5"
+                android:layout_toRightOf="@id/p3gain5"
+                android:layout_marginTop="3dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:id="@+id/p3life"
+            android:layout_column="2"
+            android:layout_gravity="center_vertical|right"
+            android:paddingRight="3dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:showDividers="beginning">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 4"
+            android:id="@+id/playerName4"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:gravity="center">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p4gain1"
+                android:layout_marginTop="3dp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p4lose1"
+                android:layout_toRightOf="@id/p4gain1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:onClick="onBtnClicked"
+                android:id="@+id/p4gain5"
+                android:layout_toRightOf="@id/p4lose1"
+                android:layout_marginTop="3dp"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5 "
+                android:onClick="onBtnClicked"
+                android:id="@+id/p4lose5"
+                android:layout_toRightOf="@id/p4gain5"
+                android:layout_marginTop="3dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:id="@+id/p4life"
+            android:layout_column="2"
+            android:layout_gravity="center_vertical|right"
+            android:paddingRight="3dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="5dp"
+        android:background="#ffff0900">
 
+    </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/death"
+        android:layout_marginLeft="3dip"/>
 </TableLayout>
 </ScrollView>

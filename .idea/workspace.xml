@@ -30,9 +30,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/edu/washington/zcamara/lifecounter/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/edu/washington/zcamara/lifecounter/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout-v14/main.xml" afterPath="$PROJECT_DIR$/src/main/res/layout-v14/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lifecounter.iws" />
@@ -77,8 +74,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.0874786" vertical-offset="0" max-vertical-offset="5160">
-              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+            <state vertical-scroll-proportion="2.7118354" vertical-offset="0" max-vertical-offset="4233">
+              <caret line="97" column="59" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -674,9 +671,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout-v14/main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1213,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/washington/zcamara/lifecounter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0874786" vertical-offset="0" max-vertical-offset="5160">
-          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+        <state vertical-scroll-proportion="2.7118354" vertical-offset="0" max-vertical-offset="4233">
+          <caret line="97" column="59" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
           <folding />
         </state>
       </provider>

@@ -95,7 +95,7 @@ public class MainActivity extends Activity
 
     private void addPlayer() {
         numPlayers++;
-        TableRow player = (TableRow) findViewById(R.id.p3);;
+        TableRow player = (TableRow) findViewById(R.id.p3);
         switch (numPlayers){
             case 4:
                 player = (TableRow) findViewById(R.id.p4);
@@ -125,217 +125,122 @@ public class MainActivity extends Activity
                     announce("You've reached the 8 player limit!");
                 break;
             case R.id.p1gain1:
-                changeHealth(1,1);
+                p1Health = changeHealth(1,1,R.id.p1life,p1Health);
                 break;
             case R.id.p1gain5:
-                changeHealth(1,5);
+                p1Health = changeHealth(1,5,R.id.p1life,p1Health);
                 break;
             case R.id.p1lose1:
-                changeHealth(1,-1);
+                p1Health = changeHealth(1,-1,R.id.p1life,p1Health);
                 break;
             case R.id.p1lose5:
-                changeHealth(1,-5);
+                p1Health = changeHealth(1,-5,R.id.p1life,p1Health);
                 break;
             case R.id.p2gain1:
-                changeHealth(2,1);
+                p2Health = changeHealth(2,1,R.id.p2life,p2Health);
                 break;
             case R.id.p2gain5:
-                changeHealth(2,5);
+                p2Health = changeHealth(2,5,R.id.p2life,p2Health);
                 break;
             case R.id.p2lose1:
-                changeHealth(2,-1);
+                p2Health = changeHealth(2,-1,R.id.p2life,p2Health);
                 break;
             case R.id.p2lose5:
-                changeHealth(2,-5);
+                p2Health = changeHealth(2,-5,R.id.p2life,p2Health);
                 break;
             case R.id.p3gain1:
-                changeHealth(3,1);
+                p3Health = changeHealth(3,1,R.id.p3life,p3Health);
                 break;
             case R.id.p3gain5:
-                changeHealth(3,5);
+                p3Health = changeHealth(3,5,R.id.p3life,p3Health);
                 break;
             case R.id.p3lose1:
-                changeHealth(3,-1);
+                p3Health = changeHealth(3,-1,R.id.p3life,p3Health);
                 break;
             case R.id.p3lose5:
-                changeHealth(3,-5);
+                p3Health = changeHealth(3,-5,R.id.p3life,p3Health);
                 break;
             case R.id.p4gain1:
-                changeHealth(4,1);
+                p4Health = changeHealth(4,1,R.id.p4life,p4Health);
                 break;
             case R.id.p4gain5:
-                changeHealth(4,5);
+                p4Health = changeHealth(4,5,R.id.p4life,p4Health);
                 break;
             case R.id.p4lose1:
-                changeHealth(4,-1);
+                p4Health = changeHealth(4,-1,R.id.p4life,p4Health);
                 break;
             case R.id.p4lose5:
-                changeHealth(4,-5);
+                p4Health = changeHealth(4,-5,R.id.p4life,p4Health);
                 break;
             case R.id.p5gain1:
-                changeHealth(5,1);
+                p5Health = changeHealth(5,1,R.id.p5life,p5Health);
                 break;
             case R.id.p5gain5:
-                changeHealth(5,5);
+                p5Health = changeHealth(5,5,R.id.p5life,p5Health);
                 break;
             case R.id.p5lose1:
-                changeHealth(5,-1);
+                p5Health = changeHealth(5,-1,R.id.p5life,p5Health);
                 break;
             case R.id.p5lose5:
-                changeHealth(5,-5);
+                p5Health = changeHealth(5,-5,R.id.p5life,p5Health);
                 break;
             case R.id.p6gain1:
-                changeHealth(6,1);
+                p6Health = changeHealth(6,1,R.id.p6life,p6Health);
                 break;
             case R.id.p6gain5:
-                changeHealth(6,5);
+                p6Health = changeHealth(6,5,R.id.p6life,p6Health);
                 break;
             case R.id.p6lose1:
-                changeHealth(6,-1);
+                p6Health = changeHealth(6,-1,R.id.p6life,p6Health);
                 break;
             case R.id.p6lose5:
-                changeHealth(6,-5);
+                p6Health = changeHealth(6,-5,R.id.p6life,p6Health);
                 break;
             case R.id.p7gain1:
-                changeHealth(7,1);
+                p7Health = changeHealth(7,1,R.id.p7life,p7Health);
                 break;
             case R.id.p7gain5:
-                changeHealth(7,5);
+                p7Health = changeHealth(7,5,R.id.p7life,p7Health);
                 break;
             case R.id.p7lose1:
-                changeHealth(7,-1);
+                p7Health = changeHealth(7,-1,R.id.p7life,p7Health);
                 break;
             case R.id.p7lose5:
-                changeHealth(7,-5);
+                p7Health = changeHealth(7,-5,R.id.p7life,p7Health);
                 break;
             case R.id.p8gain1:
-                changeHealth(8,1);
+                p8Health = changeHealth(8,1,R.id.p8life,p8Health);
                 break;
             case R.id.p8gain5:
-                changeHealth(8,5);
+                p8Health = changeHealth(8,5,R.id.p8life,p8Health);
                 break;
             case R.id.p8lose1:
-                changeHealth(8,-1);
+                p8Health = changeHealth(8,-1,R.id.p8life,p8Health);
                 break;
             case R.id.p8lose5:
-                changeHealth(8,-5);
+                p8Health = changeHealth(8,-5,R.id.p8life,p8Health);
                 break;
         }
     }
 
-    private void changeHealth(int player, int change) {
-        switch(player) {
-            case 1:
-                if(p1Health != 0) {
-                    p1Health += change;
-                    TextView p1life = (TextView) findViewById(R.id.p1life);
-                    if (p1Health <= 0) {
-                        p1Health = 0;
-                        announce(player, false);
-                    }
-                    p1life.setText("" + p1Health);
-                } else
-                    announce(player, true);
-                break;
-            case 2:
-                if(p2Health != 0) {
-                    p2Health += change;
-                    TextView p2life = (TextView) findViewById(R.id.p2life);
-                    if (p2Health <= 0) {
-                        p2Health = 0;
-                        announce(player, false);
-                    }
-                    p2life.setText("" + p2Health);
-                } else
-                    announce(player, true);
-                break;
-            case 3:
-                if(p3Health != 0) {
-                    p3Health += change;
-                    TextView p3life = (TextView) findViewById(R.id.p3life);
-                    if (p3Health <= 0) {
-                        p3Health = 0;
-                        announce(player, false);
-                    }
-                    p3life.setText("" + p3Health);
-                } else
-                    announce(player, true);
-                break;
-            case 4:
-                if(p4Health != 0) {
-                    p4Health += change;
-                    TextView p4life = (TextView) findViewById(R.id.p4life);
-                    if (p4Health <= 0) {
-                        p4Health = 0;
-                        announce(player, false);
-                    }
-                    p4life.setText("" + p4Health);
-                } else
-                    announce(player, true);
-                break;
-            case 5:
-                if(p5Health != 0) {
-                    p5Health += change;
-                    TextView p5life = (TextView) findViewById(R.id.p5life);
-                    if (p5Health <= 0) {
-                        p5Health = 0;
-                        announce(player, false);
-                    }
-                    p5life.setText("" + p5Health);
-                } else
-                    announce(player, true);
-                break;
-            case 6:
-                if(p6Health != 0) {
-                    p6Health += change;
-                    TextView p6life = (TextView) findViewById(R.id.p6life);
-                    if (p6Health <= 0) {
-                        p6Health = 0;
-                        announce(player, false);
-                    }
-                    p6life.setText("" + p6Health);
-                } else
-                    announce(player, true);
-                break;
-            case 7:
-                if(p7Health != 0) {
-                    p7Health += change;
-                    TextView p7life = (TextView) findViewById(R.id.p7life);
-                    if (p7Health <= 0) {
-                        p7Health = 0;
-                        announce(player, false);
-                    }
-                    p7life.setText("" + p7Health);
-                } else
-                    announce(player, true);
-                break;
-            case 8:
-                if(p8Health != 0) {
-                    p8Health += change;
-                    TextView p8life = (TextView) findViewById(R.id.p8life);
-                    if (p8Health <= 0) {
-                        p8Health = 0;
-                        announce(player, false);
-                    }
-                    p8life.setText("" + p8Health);
-                } else
-                    announce(player, true);
-                break;
+    private int changeHealth(int player, int change, int life, int health) {
+        if(health != 0) {
+            health += change;
+            TextView plife = (TextView) findViewById(life);
+            if (health <= 0) {
+                health = 0;
+                announce("Player " + player + " LOSES!");
+            }
+            plife.setText("" + health);
+        } else {
+            announce("Player " + player + " is already dead!");
         }
+        return health;
     }
 
     private void announce(String msg) {
         TextView death = (TextView) findViewById(R.id.death);
         announcement = msg;
-        death.setText(announcement);
-    }
-
-    private void announce(int player, boolean beenDead){
-        TextView death = (TextView) findViewById(R.id.death);
-        if(beenDead)
-            announcement = "Player " + player + " is already dead!";
-        else
-            announcement = "Player " + player + " LOSES!";
         death.setText(announcement);
     }
 

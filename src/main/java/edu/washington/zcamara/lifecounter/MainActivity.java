@@ -7,7 +7,6 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.view.animation.AnimationUtils;
 
-
 public class MainActivity extends Activity
 {
 
@@ -115,7 +114,7 @@ public class MainActivity extends Activity
                 player = (TableRow) findViewById(R.id.p8);
                 break;
         }
-        player.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        player.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left));
         player.setVisibility(View.VISIBLE);
     }
 
@@ -235,7 +234,7 @@ public class MainActivity extends Activity
                 announce("Player " + player + " LOSES!");
             }
             plife.setText("" + health);
-            plife.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left));
+            plife.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
         } else {
             announce("Player " + player + " is already dead!");
         }

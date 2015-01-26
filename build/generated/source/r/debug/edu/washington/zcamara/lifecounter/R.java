@@ -16,7 +16,7 @@ public final class R {
     public static final class id {
         public static final int addPlayer=0x7f050002;
         public static final int button=0x7f050000;
-        public static final int death=0x7f05001c;
+        public static final int death=0x7f05003a;
         public static final int p1gain1=0x7f050005;
         public static final int p1gain5=0x7f050007;
         public static final int p1life=0x7f050009;
@@ -27,20 +27,50 @@ public final class R {
         public static final int p2life=0x7f05000f;
         public static final int p2lose1=0x7f05000c;
         public static final int p2lose5=0x7f05000e;
-        public static final int p3gain1=0x7f050011;
-        public static final int p3gain5=0x7f050013;
-        public static final int p3life=0x7f050015;
-        public static final int p3lose1=0x7f050012;
-        public static final int p3lose5=0x7f050014;
-        public static final int p4gain1=0x7f050017;
-        public static final int p4gain5=0x7f050019;
-        public static final int p4life=0x7f05001b;
-        public static final int p4lose1=0x7f050018;
-        public static final int p4lose5=0x7f05001a;
+        public static final int p3=0x7f050010;
+        public static final int p3gain1=0x7f050012;
+        public static final int p3gain5=0x7f050014;
+        public static final int p3life=0x7f050016;
+        public static final int p3lose1=0x7f050013;
+        public static final int p3lose5=0x7f050015;
+        public static final int p4=0x7f050017;
+        public static final int p4gain1=0x7f050019;
+        public static final int p4gain5=0x7f05001b;
+        public static final int p4life=0x7f05001d;
+        public static final int p4lose1=0x7f05001a;
+        public static final int p4lose5=0x7f05001c;
+        public static final int p5=0x7f05001e;
+        public static final int p5gain1=0x7f050020;
+        public static final int p5gain5=0x7f050022;
+        public static final int p5life=0x7f050024;
+        public static final int p5lose1=0x7f050021;
+        public static final int p5lose5=0x7f050023;
+        public static final int p6=0x7f050025;
+        public static final int p6gain1=0x7f050027;
+        public static final int p6gain5=0x7f050029;
+        public static final int p6life=0x7f05002b;
+        public static final int p6lose1=0x7f050028;
+        public static final int p6lose5=0x7f05002a;
+        public static final int p7=0x7f05002c;
+        public static final int p7gain1=0x7f05002e;
+        public static final int p7gain5=0x7f050030;
+        public static final int p7life=0x7f050032;
+        public static final int p7lose1=0x7f05002f;
+        public static final int p7lose5=0x7f050031;
+        public static final int p8=0x7f050033;
+        public static final int p8gain1=0x7f050035;
+        public static final int p8gain5=0x7f050037;
+        public static final int p8life=0x7f050039;
+        public static final int p8lose1=0x7f050036;
+        public static final int p8lose5=0x7f050038;
         public static final int playerName1=0x7f050004;
         public static final int playerName2=0x7f05000a;
-        public static final int playerName3=0x7f050010;
-        public static final int playerName4=0x7f050016;
+        public static final int playerName3=0x7f050011;
+        public static final int playerName4=0x7f050018;
+        public static final int playerName5=0x7f05001f;
+        public static final int playerName6=0x7f050026;
+        public static final int playerName7=0x7f05002d;
+        public static final int playerName8=0x7f050034;
         public static final int textView=0x7f050001;
         public static final int textView2=0x7f050003;
     }
@@ -49,5 +79,9 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int btn1=0x7f040001;
+        public static final int btn2=0x7f040002;
+        public static final int btn3=0x7f040003;
+        public static final int btn4=0x7f040004;
     }
 }

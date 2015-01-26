@@ -3,4 +3,8 @@
     <!-- From: file:/Users/zachcamara/lifecounter/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Life Counter</string>
+    <string name="btn1">+</string>
+    <string name="btn2">-</string>
+    <string name="btn3">+5</string>
+    <string name="btn4">-5</string>
 </resources>

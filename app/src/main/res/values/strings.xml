@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Life Counter</string>
+    <string name="btn1">+</string>
+    <string name="btn2">-</string>
+    <string name="btn3">+5</string>
+    <string name="btn4">-5</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

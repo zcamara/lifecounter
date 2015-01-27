@@ -35,7 +35,9 @@ public class MainActivity extends Activity
         p6Health = 20;
         p7Health = 20;
         p8Health = 20;
-        numPlayers = 2;
+        numPlayers = 0;
+        while(numPlayers < 2)
+            addPlayer();
     }
 
     //Use onSaveInstanceState(Bundle) and onRestoreInstanceState
@@ -96,8 +98,14 @@ public class MainActivity extends Activity
 
     private void addPlayer() {
         numPlayers++;
-        TableRow player = (TableRow) findViewById(R.id.p3);
+        TableRow player = (TableRow) findViewById(R.id.p1);
         switch (numPlayers){
+            case 2:
+                player = (TableRow) findViewById(R.id.p2);
+                break;
+            case 3:
+                player = (TableRow) findViewById(R.id.p3);
+                break;
             case 4:
                 player = (TableRow) findViewById(R.id.p4);
                 break;

@@ -57,6 +57,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal"
+        android:id="@+id/p1"
+        android:visibility="gone"
         android:showDividers="beginning"
         >
         <TextView
@@ -127,7 +129,9 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal"
-        android:showDividers="beginning">
+        android:showDividers="beginning"
+        android:id="@+id/p2"
+        android:visibility="gone">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,7 +140,8 @@
             android:id="@+id/playerName2"
             android:layout_column="0"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="3dip" />
+            android:layout_marginLeft="3dip"
+            />
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
